@@ -23,20 +23,20 @@ function renderFire() {
     let html = '<table  cellpadding=0 cellspacing=0>'
 
     for (let row = 0; row <fireHeight; row++) {
-        html += '</tr>'
+        html += '<tr>'
 
         for (let column = 0; column < fireWidth; column++) {
             const pixelIndex = column + ( fireWidth * row)
 
             html += '<td>'
-            html += pixelIndex
+            html += `<div class="pixel-index">${pixelIndex}</div>`
             html += '</td>'
         }
 
         html += '</tr>'
     }
 
-    html +='</table>'
+    html += '</table>'
 
     document.querySelector ('#fireCanvas').innerHTML = html
 }
