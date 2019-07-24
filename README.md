@@ -1,3 +1,3 @@
 # FogoDoom
 
-Fogo do Doom, renderizado com Javascript
+Doom fire rendered with Javascript
